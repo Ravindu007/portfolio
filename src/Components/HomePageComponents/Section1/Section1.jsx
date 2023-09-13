@@ -13,7 +13,7 @@ const Section1 = () => {
             <button class="relative px-6 py-2 group w-fit">
                 <span class="absolute inset-0  h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-color1 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                 <span class="absolute inset-0 w-full h-full bg-color1 border-2 border-color2 group-hover:bg-color1"></span>
-                <span class="relative text-color2 group-hover:text-color2"> Download CV</span>
+                <a href='/cv/CV_RavinduDharmadasa.pdf' download={true} class="relative text-color2 group-hover:text-color2"> Download CV</a>
             </button>
         </div>
 
