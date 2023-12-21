@@ -25,7 +25,9 @@ const Section3 = () => {
   ])
 
   return (
-    <div>
+    <div data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom"
+    data-aos-duration="1500">
       {/* ection Header */}
       <div className="row">
         <div className="col-12 text-center">

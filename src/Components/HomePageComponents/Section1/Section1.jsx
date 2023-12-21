@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from "framer-motion"
+
 
 const Section1 = () => {
   return (
-    <div className='h-screen mb-72 md:mb-0'>
+    <div data-aos="fade-right" data-aos-duration="1500" className='h-screen mb-72 md:mb-0'>
       <div className="row">
         {/* portfolio description */}
         <div className="col-sm-12 col-md-7 flex flex-col justify-center space-y-4 pt-8 md:pt-0">
@@ -18,7 +20,18 @@ const Section1 = () => {
         </div>
 
         {/* Portfolio image */}
-        <div className="min-h-screen col-sm-12 col-md-5 flex flex-col justify-center items-center mt-10">
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ rotate: 360, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 50,
+            duration: 5, // Animation duration in seconds
+            ease: "easeInOut", // Easing function
+            delay: 1, // Delay before the animation starts in seconds
+          }}
+        className="min-h-screen col-sm-12 col-md-5 flex flex-col justify-center items-center mt-10">
             {/* image */}
             <div className="flex max-w-sm photo-div border-2 border-color1 relative">
               <div className="photo-div-2  translate-x-4 translate-y-[-30px] border-2 border-color1">
@@ -40,7 +53,7 @@ const Section1 = () => {
                 <img src="/icons/twitter.png" alt="" />
               </Link>
             </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )

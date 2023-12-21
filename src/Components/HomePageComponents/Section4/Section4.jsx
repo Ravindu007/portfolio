@@ -56,7 +56,10 @@ const Section4 = () => {
   ])
 
   return (
-    <div className='container pt-10 h-fit'>
+    <div className='container pt-10 h-fit'
+    data-aos="flip-up"
+    data-aos-duration="1500"
+    >
       {/* Section header */}
       <div className="row">
         <div className="col-12 text-center">

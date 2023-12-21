@@ -2,7 +2,7 @@ import React from 'react'
 
 const Section2 = () => {
   return (
-    <div className='mt-52 md:mt-0'>
+    <div className='mt-52 md:mt-0' data-aos="fade-up" data-aos-duration="1500" >
       {/* Section heading */}
       <div className="row">
         <div className="col-12 text-center">

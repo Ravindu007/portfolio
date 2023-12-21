@@ -11,7 +11,10 @@ const Section5 = () => {
   ])
 
   return (
-    <div className='container h-fit pt-10'>
+    <div className='container h-fit pt-10'
+    data-aos="flip-down"
+    data-aos-duration="1500" 
+    >
       {/* Section Header */}
       <div className="row">
         <div className="col-12 text-center">
