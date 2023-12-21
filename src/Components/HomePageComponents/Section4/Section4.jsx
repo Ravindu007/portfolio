@@ -56,14 +56,16 @@ const Section4 = () => {
   ])
 
   return (
-    <div className='container pt-10 h-fit'
+    <div 
+    id='projects'
+    className='container pt-10 h-fit'
     data-aos="flip-up"
     data-aos-duration="1500"
     >
       {/* Section header */}
       <div className="row">
         <div className="col-12 text-center">
-          <h1>Projects I have Built</h1>
+          <h1 className='text-4xl py-5'>PROJECTS I HAVE BUILT</h1>
         </div>
       </div>
 

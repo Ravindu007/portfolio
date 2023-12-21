@@ -28,13 +28,12 @@ const Navbar = () => {
     <div className=''>
       {/* items */}
       <ul className='flex md:flex-row flex-col items-center gap-[4vw]'>
-        <li className='text-xl hover:text-color1 hover:underline hover:scale-110 transition-transform duration-200 hover:underline-offset-8'><Link>Home</Link></li>
-        <li className='text-xl hover:text-color1 hover:underline hover:scale-110 transition-transform duration-200 hover:underline-offset-8'><Link>About</Link></li>
-        <li className='text-xl hover:text-color1 hover:underline hover:scale-110 transition-transform duration-200 hover:underline-offset-8'><Link>Skills</Link></li>
-        <li className='text-xl hover:text-color1 hover:underline hover:scale-110 transition-transform duration-200 hover:underline-offset-8'><Link>Portfolio</Link></li>
-        <li className='text-xl hover:text-color1 hover:underline hover:scale-110 transition-transform duration-200 hover:underline-offset-8'><Link>Certifications</Link></li>
-        <li className='text-xl hover:text-color1 hover:underline hover:scale-110 transition-transform duration-200 hover:underline-offset-8'><Link>Gallery</Link></li>
-        <li className='text-xl hover:text-color1 hover:underline hover:scale-110 transition-transform duration-200 hover:underline-offset-8'><Link>Contact</Link></li>
+        <li className='text-xl'><a className='hover:text-color1 hover:underline hover:scale-110 transition-transform duration-200 hover:underline-offset-8' href='#home'>Home</a></li>
+        <li className='text-xl'><a className='hover:text-color1 hover:underline hover:scale-110 transition-transform duration-200 hover:underline-offset-8' href='#about'>About</a></li>
+        <li className='text-xl'><a className='hover:text-color1 hover:underline hover:scale-110 transition-transform duration-200 hover:underline-offset-8' href='#skills'>Skills</a></li>
+        <li className='text-x'><a className='hover:text-color1 hover:underline hover:scale-110 transition-transform duration-200 hover:underline-offset-8' href='#projects'>Portfolio</a></li>
+        <li className='text-x'><a className='hover:text-color1 hover:underline hover:scale-110 transition-transform duration-200 hover:underline-offset-8' href='#certificates'>Certifications</a></li>
+        <li className='text-x'><a className='hover:text-color1 hover:underline hover:scale-110 transition-transform duration-200 hover:underline-offset-8' href='#gallery'>Gallery</a></li>
       </ul>
     </div>
     <div>
@@ -42,7 +41,7 @@ const Navbar = () => {
       <button class="relative px-6 py-2 group w-fit">
                 <span class="absolute inset-0  h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-color1 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                 <span class="absolute inset-0 w-full h-full bg-color1 border-2 border-color2 group-hover:bg-color1"></span>
-                <span class="relative text-color2 group-hover:text-color2"> Download CV </span>
+                <a href='/cv/CV_RavinduDharmadasa.pdf' download={true} class="relative text-color2 group-hover:text-color2"> Download CV</a>
         </button>
     </div>
    </nav>
@@ -57,13 +56,12 @@ const Navbar = () => {
         >
           <div className="w-screen h-screen flex  justify-center items-center bg-white text-black rounded-[20px] p-2 z-50">
             <ul className='flex flex-col gap-3'>
-              <Link className='hover:bg-primaryColor hover:text-black rounded-[20px] px-2'> Home </Link>
-              <Link className='hover:bg-primaryColor hover:text-black rounded-[20px] px-2'> About </Link>
-              <Link className='hover:bg-primaryColor hover:text-black rounded-[20px] px-2'> Skills </Link>
-              <Link className='hover:bg-primaryColor hover:text-black rounded-[20px] px-2'> Portfolio </Link>
-              <Link className='hover:bg-primaryColor hover:text-black rounded-[20px] px-2'> Certificaions </Link>
-              <Link className='hover:bg-primaryColor hover:text-black rounded-[20px] px-2'> Gallery </Link>
-              <Link className='hover:bg-primaryColor hover:text-black rounded-[20px] px-2'> Contact </Link>
+              <a  href='#home' className='hover:bg-primaryColor hover:text-black rounded-[20px] px-2'> Home </a>
+              <a  href='#about'  className='hover:bg-primaryColor hover:text-black rounded-[20px] px-2'> About </a>
+              <a  href='#skills' className='hover:bg-primaryColor hover:text-black rounded-[20px] px-2'> Skills </a>
+              <a  href='#projects' className='hover:bg-primaryColor hover:text-black rounded-[20px] px-2'> Portfolio </a>
+              <a  href='#certificates' className='hover:bg-primaryColor hover:text-black rounded-[20px] px-2'> Certificaions </a>
+              <a href='#gallery' className='hover:bg-primaryColor hover:text-black rounded-[20px] px-2'> Gallery </a>
             </ul>
           </div>
         </m.nav>

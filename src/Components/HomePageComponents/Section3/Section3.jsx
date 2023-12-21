@@ -25,13 +25,14 @@ const Section3 = () => {
   ])
 
   return (
-    <div data-aos="fade-up"
-    data-aos-anchor-placement="bottom-bottom"
-    data-aos-duration="1500">
+    <div
+    id='skills' 
+    data-aos="fade-up"
+    data-aos-duration="400"> 
       {/* ection Header */}
       <div className="row">
         <div className="col-12 text-center">
-          <h1>Skills</h1>
+          <h1 className='text-4xl'>SKILLS</h1>
         </div>
       </div>
 
@@ -40,7 +41,7 @@ const Section3 = () => {
 
         {/* Technical skills */}
         <div className="col-sm-12 col-md-6">
-          <h1 class="text-2xl py-2">Tecnical Skills</h1>
+          <h1 class="text-2xl py-2 text-color1 text-center">Tecnical Skills</h1>
           <div className="tec-skill-card space-y-4">
             {tecSkills.map((skill)=>(
               <div key={skill.id}>
@@ -59,7 +60,7 @@ const Section3 = () => {
 
         {/* Softskills */}
         <div className="col-sm-12 col-md-6">
-          <h1 class="text-2xl py-2">Non-Technical Skills</h1>
+          <h1 class="text-2xl py-2 text-color1 text-center">Non-Technical Skills</h1>
           <div className="tec-skill-card space-y-4">
             {softSkills.map((skill)=>(
               <div key={skill.id}>

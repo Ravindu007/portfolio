@@ -3,6 +3,7 @@ import Home from './Pages/Home'
 import { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Section2 from './Components/HomePageComponents/Section2/Section2';
 
 
 function App() {

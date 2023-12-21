@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState } from 'react'
 
 const Section6 = () => {
 
@@ -6,11 +6,13 @@ const Section6 = () => {
 
 
   return (
-    <div className='container pt-10'>
+    <div 
+    id='gallery'
+    className='container pt-10'>
       <div className="row">
         {/* Section Header */}
         <div className="col-12 text-center py-4">
-          <h1>Gallery</h1>
+          <h1 className='text-4xl'>GALLERY</h1>
         </div>
       </div>
 
@@ -22,7 +24,7 @@ const Section6 = () => {
 
             {/* photo 1 */}
             <div 
-              className="card col-12 rounded-[55px] min" style={{ minHeight:"300px", maxHeight:'300px', backgroundImage: `url(${photo1})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+              className="card col-12 rounded-[55px] min" style={{ height: '100vh', minHeight:"300px", maxHeight:'300px', backgroundImage: `url(${photo1})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
               {/* Content inside the card */}
             </div>
 
