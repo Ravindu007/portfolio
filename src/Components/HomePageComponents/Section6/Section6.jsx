@@ -8,7 +8,9 @@ const Section6 = () => {
   return (
     <div 
     id='gallery'
-    className='container pt-10'>
+    className='container pt-10'
+    data-aos="fade-up" data-aos-duration="1500"
+    >
       <div className="row">
         {/* Section Header */}
         <div className="col-12 text-center py-4">

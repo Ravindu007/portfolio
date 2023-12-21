@@ -6,8 +6,8 @@ const Section5 = () => {
     {name:"Python Fundamentals", img:"/certifications/c3.png", id:1},
     {name:"Java Fundamentals", img:"/certifications/c1.png", id:2},
     {name:"PHP Fundamentals", img:"/certifications/c2.png", id:3},
-    {name:"PHP Fundamentals", img:"/certifications/c3.png", id:4},
-    {name:"PHP Fundamentals", img:"/certifications/c1.png", id:5}
+    {name:"Google Technical Fundamentals", img:"/certifications/c3.png", id:4},
+    {name:"Google Bits and Bytes", img:"/certifications/c1.png", id:5}
   ])
 
   return (
