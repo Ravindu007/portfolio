@@ -89,7 +89,6 @@ const Section4 = () => {
         <div className="col-12">
           <div className="project-carousel">
             {projects.map((project)=>(
-              
                 <div className='item-card w-full justify-end mx-8' key={project.id}>
                     <div className="card-top h-[20px] w-fit translate-x-[-50%] translate-y-[50%] relative px-6 py-2 group">
                             <span class="absolute inset-0  h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-color1 "></span>
