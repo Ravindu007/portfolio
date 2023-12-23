@@ -1,17 +1,40 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from "framer-motion"
 
 
 const Section1 = () => {
+
+  useEffect(() => {
+    const changeText = () => {
+      const texts = [
+        'Full-stack Developer',
+        'Front-end Developer',
+        'Back-end Developer',
+      ];
+
+      let currentTextIndex = 0;
+
+      function typeText() {
+        const currentText = texts[currentTextIndex];
+        $(".career").text(currentText).fadeIn(2000).fadeOut(2000);
+        currentTextIndex = (currentTextIndex + 1) % texts.length;
+      }
+
+      setInterval(typeText, 3000);
+    };
+
+    changeText();
+  }, []); // Run only once when the component mounts
+
   return (
-    <div id='home' data-aos="fade-right" data-aos-duration="1500" className='h-screen mb-50 md:mb-0'>
+    <div id='home' data-aos="fade-right" data-aos-duration="1500" className='h-screen mb-50 md:mb-28'>
       <div className="row">
         {/* portfolio description */}
         <div className="col-sm-12 col-md-7 flex flex-col justify-center space-y-4 pt-8 md:pt-0">
-          <h1 className='text-5xl'>Hi ! I'm Ravindu Dharmadasa</h1>
-          <h1 className='text-4xl'>Full Stack Developer</h1>
-          <p className='text-justify text-color1'>
+          <h1 className='text-4xl md:text-8xl'>Hi <span className='text-color1'>!</span> I'm <span className='text-color1'>Ravindu</span> Dharmadasa</h1>
+          <h1 className='text-4xl career'></h1>
+          <p className='text-justify text-color1 mt-2'>
           A motivated and adaptable individual with a strong enthusiasm for continuous learning, staying updated with
           emerging technologies and methodologies, including <span className='text-white'>Object-Oriented Programming, Data Structures</span> and  <span className='text-white'> Algorithms, and design patterns</span>. Quick to acquire new skills and knowledge. Dedicated to contributing
           effectively to projects and collaborating seamlessly within a team, following agile methodologies to achieve
