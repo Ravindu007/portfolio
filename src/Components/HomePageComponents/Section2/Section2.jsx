@@ -2,7 +2,7 @@ import React from 'react'
 
 const Section2 = () => {
   return (
-    <div className='mt-52 md:mt-0' data-aos="fade-up" data-aos-duration="1500" id='about'>
+    <div className='mt-24 md:mt-20' data-aos="fade-up" data-aos-duration="1500" id='about'>
       {/* Section heading */}
       <div className="row">
         <div className="col-12 text-center">
@@ -44,7 +44,7 @@ const Section2 = () => {
 
 
         {/* Click Me button */}
-        <div className="col-sm-12 col-md-2 flex flex-col justify-center items-center space-y-4">
+        <div className="col-sm-12 col-md-2 flex flex-col justify-center items-center space-y-4 py-8">
             {/* image */}
             <div className="img-div border-2 rounded-full border-color1 z-50 flex py-1">
               <h1 className='text-4xl md:py-5 px-5 text-center'>ABOUT ME</h1>

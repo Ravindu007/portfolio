@@ -37,7 +37,7 @@ const Section1 = () => {
             ease: "easeInOut", // Easing function
             delay: 1, // Delay before the animation starts in seconds
           }}
-        className="min-h-screen col-sm-12 col-md-5 flex flex-col justify-center items-center mt-10">
+        className="min-h-screen col-sm-12 col-md-5 flex flex-col justify-center items-center mt-0 ">
             {/* image */}
             <div className="flex max-w-sm photo-div border-2 border-color1 relative">
               <div className="photo-div-2  translate-x-4 translate-y-[-30px] border-2 border-color1">

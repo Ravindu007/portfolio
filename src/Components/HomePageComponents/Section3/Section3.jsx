@@ -28,7 +28,9 @@ const Section3 = () => {
     <div
     id='skills' 
     data-aos="fade-up"
-    data-aos-duration="400"> 
+    data-aos-duration="400"
+    className='mt-[30rem] md:mt-[-10rem]'
+    >
       {/* ection Header */}
       <div className="row">
         <div className="col-12 text-center">
