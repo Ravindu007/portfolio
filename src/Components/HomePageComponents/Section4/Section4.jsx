@@ -10,7 +10,7 @@ const Section4 = () => {
     { 
       id:1,
       name:"Learning Management System", 
-      desc:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies.", 
+      desc:"Developed a full working LMS with admin functionalities which can be used by both teachers and students in there daytoday academic life", 
       techs:[
         {techName:"React", id:1},
         {techName:"Mongo DB", id:2},
@@ -26,12 +26,26 @@ const Section4 = () => {
     { 
       id:2,
       name:"TravelLog Web Application", 
-      desc:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies.", 
+      desc:"A Social Media platform dedicated to travellers around the world which allows travellers to post about the destinations they have visited", 
       techs:[
         {techName:"React", id:1},
         {techName:"Mongo DB", id:2},
         {techName:"Express Js", id:3},
         {techName:"Node Js", id:4},
+      ],
+      github:"abc",
+      youtube:"def",
+      deploy:"ghi",
+      img:"/projects/pr2.png"
+    },
+    { 
+      id:3,
+      name:"Employee Management Platform", 
+      desc:"It is a full woking Employee Management Application which allows to manage employee details", 
+      techs:[
+        {techName:"ASP.NET", id:1},
+        {techName:"Angular", id:2},
+        {techName:"MySQL", id:3},
       ],
       github:"abc",
       youtube:"def",
@@ -39,19 +53,20 @@ const Section4 = () => {
       img:"/projects/pr1.png"
     },
     { 
-      id:3,
-      name:"Learning Management System", 
-      desc:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies.", 
+      id:4,
+      name:"Personalized Weather Application", 
+      desc:"It is a weather application which fetched weather data and provide them according to the customer need", 
       techs:[
         {techName:"React", id:1},
-        {techName:"Mongo DB", id:2},
-        {techName:"Express Js", id:3},
-        {techName:"Node Js", id:4},
+        {techName:"Node.js", id:2},
+        {techName:"MongoDB", id:3},
+        {techName:"Tailwind CSS", id:4},
+        {techName:"Bootstrap CSS", id:5},
       ],
       github:"abc",
       youtube:"def",
       deploy:"ghi",
-      img:"/projects/pr1.png"
+      img:"/projects/pr3.png"
     },
   ])
 
@@ -81,7 +96,7 @@ const Section4 = () => {
                             <span class="absolute inset-0 w-full h-full bg-color2 border-2 border-color2 "></span>
                             <span class="relative space-y-6">
                                 	<h1 className='text-color1'>{project.name}</h1> 
-                                  <p className='text-white'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non facilis voluptates nobis est quisquam at quaerat odio consequuntur ea numquam ullam delectus, dignissimos rem, fuga ad exercitationem incidunt adipisci? Possimus.</p>
+                                  <p className='text-white'>{project.desc}</p>
                                   <div className="technologies flex space-x-4">
                                     {project.techs.map((tech)=>(
                                       <p key={tech.id}>{tech.techName}</p>
@@ -101,7 +116,7 @@ const Section4 = () => {
                             </span>
                     </div>
                     <div className="img-div w-fit">
-                      <img src={project.img} alt="" />
+                      <img src={project.img} alt="" className='h-[30rem] w-[30rem] rounded-md'/>
                     </div>
                 </div>
               

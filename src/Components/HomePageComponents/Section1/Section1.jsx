@@ -47,16 +47,16 @@ const Section1 = () => {
             {/* social media icons */}
             <div className=" w-[60%] social-div flex justify-around px-4 py-2">
               <Link>
-                <img src="/icons/fb.png" alt="" />
+                <img src="/icons/fb.png" alt="" width={30}/>
               </Link>
               <Link>
-                <img src="/icons/linkedIn.png" alt="" />
+                <img src="/icons/linkedIn.png" alt="" width={30}/>
               </Link>
               <Link>
-                <img src="/icons/github.png" alt="" />
+                <img src="/icons/github.png" alt="" width={30}/>
               </Link>
               <Link>
-                <img src="/icons/twitter.png" alt="" />
+                <img src="/icons/twitter.png" alt="" width={30}/>
               </Link>
             </div>
         </motion.div>
